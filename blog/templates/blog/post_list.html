@@ -23,10 +23,8 @@
                             </div>
                             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
                             <p>{{post.text|linebreaksbr}}</p>
-                            <!-- <p>published: {{ post.published_date }}</p> </div>
-    <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaksbr }}</p> </div> -->
-    </div>
+                            <img src="{{post.image.url}}" class="rounded intruder-image-list" alt="{{post.title}}" width="400" height="300">
+                    </div>
                 {% endfor %}
                 {% endblock %}
             </div>
